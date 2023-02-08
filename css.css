@@ -1,0 +1,142 @@
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html, body {
+    height: 100%;
+}
+
+._container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.header {
+    background-color: #FCFBFB;
+    box-shadow: 0 5px 20px rgba(29, 33, 38, 0.03), 0 1px 2px rgba(29, 33, 38, 0.1);
+    border-radius: 0;
+}
+.header__container {
+    min-height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+
+}
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 1 auto;
+    display: flex;
+}
+.main__container {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.menu{
+
+}
+.menu__container {
+    min-width: 180px;
+    padding-top: 43px;
+}
+.menu__items {
+
+}
+.menu__items > *:not(:first-child) {
+    margin-top: 24px;
+}
+.menu__items img{
+    margin-right: 10px;
+}
+.menu__item {
+    min-height: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.menu__item_active {
+    color: #F8346B;
+    border-right: 2px solid #F8346B;
+    min-height: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.content__container {
+    flex: 1 1 auto;
+}
+
+.content__header {
+    margin: 29px 0 7px 24px;
+    border-bottom: 1px solid #DEDBDC;
+}
+.content__header h3{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+}
+
+.content__settings {
+    display: flex;
+    justify-content: flex-end;
+}
+.content__settings select{
+    border: 1px solid #DEDBDC;
+    padding: 6px 0 6px 12px;
+    min-width: 25%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    outline: none;
+}
